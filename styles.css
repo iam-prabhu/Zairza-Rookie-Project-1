@@ -145,7 +145,7 @@ a{
     gap:4rem;
 }
 .bottom{
-    transition:transform 0.3s ease
+    transition: all 0.3s ease;
 }
 .bottom:hover{
     transform:scale(1.1);
