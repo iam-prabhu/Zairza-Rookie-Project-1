@@ -19,7 +19,7 @@
     height: 1.5rem;
     width: auto;
     margin: 1rem;
-    margin-left: 2.5rem;
+    /* margin-left: 2.5rem; */
     padding: auto;
 }
 .list{
@@ -27,6 +27,7 @@
     list-style: none;
     justify-content: space-between;
     align-items: center;
+    align-content: flex-start;
 }
 li{
     margin-right: 2rem;
@@ -35,6 +36,32 @@ a{
     text-decoration: none;
     color: white;
     
+}
+.sidelist{
+    position:fixed;
+    top: 0;
+    right:0;
+    height:100vh;
+    width:250px;
+    z-index: 999;
+    background-color: rgb(13, 13, 23);
+    box-shadow: -10px 0 10px rgbs(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2rem;
+    justify-content:flex-start;
+    row-gap: 2rem;
+}
+.auth{
+    margin-left: 2rem;
+}
+
+.menu-button{
+    display: none;
 }
 .hero{
     background-image: url(bg.dd66f10accaaca6f8c9e.webp);
@@ -106,7 +133,7 @@ align-items: center;
 }
 
 .right-img{
-    height:45rem;
+    height:37rem;
     width: auto;
 }
 .mid{
@@ -117,6 +144,15 @@ align-items: center;
 
 }
 .auth:hover{
+    color: #cc20ad;
+}
+.hideOnMobile:hover{
+    color: #cc20ad;
+}
+.menu-button:hover{
+    color: #cc20ad;
+}
+.list:hover{
     color: #cc20ad;
 }
 .mid-right{
@@ -218,7 +254,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
-@media (max-width:1280px) {
+@media (max-width:800px) {
     nav{
         display: flex;
         flex-direction: column;
@@ -350,11 +386,26 @@ align-items: center;
         width: auto;
         transform: scale(0.8);
     }
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
 
     
 
 }
-@media (max-width:1300px) {
+@media (max-width:800px) {
     .img-bottom
     {
         display: flex;
@@ -365,9 +416,18 @@ align-items: center;
         height: auto;
     }
 }
+@media(max-width:400px){
+    .sidelist{
+        width:100%;
+        height: 100%;
+    }
+    .menu-button{
+        display: block;
+    }
+}
    
 
-    
-     
+   
 
-}
+
+
