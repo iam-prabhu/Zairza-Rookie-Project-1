@@ -33,7 +33,6 @@ html {
 .left {
     margin: 6.25rem; /* 100px */
     height: 37.5rem; /* 600px */
-    width: 31.25rem; /* 500px */
     color: white;
     display: flex;
     flex-direction: column;
