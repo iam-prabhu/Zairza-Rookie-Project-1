@@ -9,7 +9,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 .logo {
   height: 4.5rem;
@@ -20,7 +19,6 @@
   height: 1.5rem;
   width: auto;
   margin: 1rem;
-/*   margin-left: 2.5rem; */
   padding: auto;
 }
 .list {
@@ -67,13 +65,11 @@ a {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  width: 100%;
 }
 .top {
   display: flex;
   height: 100vh;
   justify-content: space-between;
-  max-width: 100%;
 }
 .top .left {
   align-items: center;
@@ -133,7 +129,7 @@ a {
 }
 
 .right-img {
-  height: 45rem;
+  height: 37rem;
   width: auto;
 }
 .mid {
@@ -154,6 +150,9 @@ a {
 .menu-button:hover{
   color: #cc20ad;
 }
+.list:hover{
+   color: #cc20ad;
+}
 .zen {
   color: #ffffff;
   background-color: #cc20ad;
@@ -167,13 +166,7 @@ a {
   align-items: center;
   height: 100vh;
 }
-.details-text{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    overflow:hidden;
-}
+
 .head {
   display: flex;
   justify-content: center;
@@ -197,7 +190,6 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 4rem;
-  /* height: 24rem; */
   width: auto;
 }
 .robot {
@@ -430,15 +422,7 @@ a {
         flex-direction: row;
     }
 }
-@media (max-width: 1300px) {
-  .img-bottom {
-    display: flex;
-    flex-direction: column;
-  }
-  .events {
-    height: auto;
-  }
-}
+
 @media (max-width:800px) {
     .img-bottom
     {
