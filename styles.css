@@ -20,7 +20,7 @@
   height: 1.5rem;
   width: auto;
   margin: 1rem;
-  margin-left: 2.5rem;
+/*   margin-left: 2.5rem; */
   padding: auto;
 }
 .list {
@@ -145,8 +145,14 @@ a {
 .auth:hover {
   color: #cc20ad;
 }
+.hideOnMobile:hover{
+   color: #cc20ad;
+}
 .mid-right {
   padding: 10rem;
+}
+.menu-button:hover{
+  color: #cc20ad;
 }
 .zen {
   color: #ffffff;
@@ -256,7 +262,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1280px) {
+@media (max-width: 800px) {
     .details-text{
         padding: 1rem;
     }
